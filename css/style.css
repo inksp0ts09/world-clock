@@ -9,6 +9,10 @@ h1 {
   font-size: 36px;
 }
 
+a .home {
+  text-decoration: none;
+}
+
 h2 {
   margin: 0 0 5px;
   font-size: 28px;
