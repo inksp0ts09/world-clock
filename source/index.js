@@ -21,7 +21,7 @@ function updateTime() {
 
     munichDateElement.innerHTML = munichTime.format("MMMM Do YYYY");
     munichTimeElement.innerHTML = munichTime.format(
-      "h:mm:ss [<small>A</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
