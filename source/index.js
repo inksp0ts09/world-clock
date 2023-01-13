@@ -12,15 +12,15 @@ function updateTime() {
     );
   }
 
-  //Tangier
-  let tangierElement = document.querySelector("#tangier");
-  if (tangierElement) {
-    let tangierDateElement = tangierElement.querySelector(".date");
-    let tangierTimeElement = tangierElement.querySelector(".time");
-    let tangierTime = moment().tz("Africa/Ceuta");
+  //Prague
+  let pragueElement = document.querySelector("#prague");
+  if (pragueElement) {
+    let pragueDateElement = pragueElement.querySelector(".date");
+    let pragueTimeElement = pragueElement.querySelector(".time");
+    let pragueTime = moment().tz("Europe/Prague");
 
-    tangierDateElement.innerHTML = tangierTime.format("MMMM Do YYYY");
-    tangierTimeElement.innerHTML = tangierTime.format(
+    pragueDateElement.innerHTML = pragueTime.format("MMMM Do YYYY");
+    pragueTimeElement.innerHTML = pragueTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
