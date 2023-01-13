@@ -17,7 +17,7 @@ function updateTime() {
   if (munichElement) {
     let munichDateElement = munichElement.querySelector(".date");
     let munichTimeElement = munichElement.querySelector(".time");
-    let munichTime = moment().tz("Europe/Munich");
+    let munichTime = moment().tz("Europe/Berlin");
 
     munichDateElement.innerHTML = munichTime.format("MMMM Do YYYY");
     munichTimeElement.innerHTML = munichTime.format(
