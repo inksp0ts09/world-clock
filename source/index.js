@@ -12,17 +12,15 @@ function updateTime() {
     );
   }
 
-  //Prague
-  let pragueElement = document.querySelector("#prague");
-  if (pragueElement) {
-    let pragueDateElement = pragueElement.querySelector(".date");
-    let pragueTimeElement = pragueElement.querySelector(".time");
-    let pragueTime = moment().tz("Europe/Prague");
+  //Kyiv
+  let kyivElement = document.querySelector("#kyiv");
+  if (kyivElement) {
+    let kyivDateElement = kyivElement.querySelector(".date");
+    let kyivTimeElement = kyivElement.querySelector(".time");
+    let kyivTime = moment().tz("Europe/Kiev");
 
-    pragueDateElement.innerHTML = pragueTime.format("MMMM Do YYYY");
-    pragueTimeElement.innerHTML = pragueTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
+    kyivDateElement.innerHTML = kyivTime.format("MMMM Do YYYY");
+    kyivTimeElement.innerHTML = kyivTime.format("h:mm:ss [<small>]A[</small>]");
   }
 }
 
