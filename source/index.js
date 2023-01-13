@@ -12,15 +12,15 @@ function updateTime() {
     );
   }
 
-  //Munich
-  let munichElement = document.querySelector("#munich");
-  if (munichElement) {
-    let munichDateElement = munichElement.querySelector(".date");
-    let munichTimeElement = munichElement.querySelector(".time");
-    let munichTime = moment().tz("Europe/Berlin");
+  //Tangier
+  let tangierElement = document.querySelector("#tangier");
+  if (tangierElement) {
+    let tangierDateElement = tangierElement.querySelector(".date");
+    let tangierTimeElement = tangierElement.querySelector(".time");
+    let tangierTime = moment().tz("Africa/Ceuta");
 
-    munichDateElement.innerHTML = munichTime.format("MMMM Do YYYY");
-    munichTimeElement.innerHTML = munichTime.format(
+    tangierDateElement.innerHTML = munichTime.format("MMMM Do YYYY");
+    tangierTimeElement.innerHTML = munichTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
