@@ -19,8 +19,8 @@ function updateTime() {
     let tangierTimeElement = tangierElement.querySelector(".time");
     let tangierTime = moment().tz("Africa/Ceuta");
 
-    tangierDateElement.innerHTML = munichTime.format("MMMM Do YYYY");
-    tangierTimeElement.innerHTML = munichTime.format(
+    tangierDateElement.innerHTML = tangierTime.format("MMMM Do YYYY");
+    tangierTimeElement.innerHTML = tangierTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
